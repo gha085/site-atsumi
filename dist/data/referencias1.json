@@ -1,0 +1,410 @@
+  [
+  {
+    "name": "Alice Marie Catalan",
+    "role": "Psicóloga Clínica · Terapias Cognitivo-Comportamentais",
+    "tags": {
+      "primary": "Pessoas & Cultura",
+      "secondary": ["Psicologia Clínica", "Saúde Mental"]
+    },
+    "why": "Referência em psicologia clínica para atendimento em terapias cognitivo comportamentais.",
+    "avatar": "/img/avatars/alice-marie.jpg",
+    "links": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/alicemariecatalan/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Andressa Trivelli",
+    "role": "Empreendedora · Sustentabilidade · Projetos de Impacto",
+    "tags": {
+      "primary": "Impacto & Sustentabilidade",
+      "secondary": ["Projetos", "Filantropia"]
+    },
+    "why": "Referência para projetos de impacto real, filantropia estratégica e articulação entre organizações.",
+    "avatar": "/img/avatars/dre-trivelli.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/dretrivelli/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Carla Albuquerque",
+    "role": "Consultoria e treinamento em design colaborativo",
+    "tags": {
+      "primary": "Pessoas & Cultura",
+      "secondary": ["Facilitação", "Design Colaborativo"]
+    },
+    "why": "Referência para processos colaborativos e construção de ambientes de cooperação.",
+    "avatar": "/img/avatars/carla-albuquerque.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/carla-albuquerque-oliveira/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Enrique Baliosian",
+    "role": "Gerente de Tecnologia · Envoy",
+    "tags": {
+      "primary": "Tecnologia & Engenharia",
+      "secondary": ["Liderança Técnica", "Arquitetura"]
+    },
+    "why": "Referência para liderança técnica e gestão de tecnologia com visão estratégica.",
+    "avatar": "/img/avatars/enrique-baliosian.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/enrique-b-965309221/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Fernando Holanda",
+    "role": "Assistente de Projetos Ambientais",
+    "tags": {
+      "primary": "Impacto & Sustentabilidade",
+      "secondary": ["Projetos", "Processos"]
+    },
+    "why": "Referência para gestão e acompanhamento de projetos ambientais.",
+    "avatar": "/img/avatars/fernando-holanda.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/fgholanda/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Fernando Mauricio",
+    "role": "Customer Experience · Customer Success · Suporte",
+    "tags": {
+      "primary": "Produto & Experiência",
+      "secondary": ["CX", "CS"]
+    },
+    "why": "Referência para excelência operacional em experiência do cliente.",
+    "avatar": "/img/avatars/fernando-mauricio.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/fernando-mauricio-ba496b194/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Flávia Crizanto",
+    "role": "SEO · Marketing de Busca · Professora",
+    "tags": {
+      "primary": "Marketing & Marca",
+      "secondary": ["SEO", "Conteúdo"]
+    },
+    "why": "Referência para estratégia de presença orgânica e posicionamento digital.",
+    "avatar": "/img/avatars/flavia-crizanto.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/flaviacrizanto/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Greice Parnow",
+    "role": "Estrategista de marcas · Criadora do método Branding Existencial",
+    "tags": {
+      "primary": "Estratégia & Governança",
+      "secondary": ["Branding", "Narrativa"]
+    },
+    "why": "Referência para estratégia de marca com profundidade e coerência estrutural.",
+    "avatar": "/img/avatars/greice-parnow.png",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/greiceparnow-brandingexistencial/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Isabel Valle",
+    "role": "Publisher Editorial",
+    "tags": {
+      "primary": "Educação & Desenvolvimento",
+      "secondary": ["Editorial", "Impacto"]
+    },
+    "why": "Referência para projetos editoriais com propósito e visão sistêmica.",
+    "avatar": "/img/avatars/isabel-valle.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/ivalle/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Jandir Alceu Cutabiala",
+    "role": "Software Engineer",
+    "tags": {
+      "primary": "Tecnologia & Engenharia",
+      "secondary": ["Full Stack", "Sistemas"]
+    },
+    "why": "Referência para desenvolvimento de software com consistência técnica.",
+    "avatar": "/img/avatars/jandir-alceu.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/jandiralceu/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "João Henrique D'Elia Bizarro",
+    "role": "Novos Negócios · Go-to-market · P&L Ownership",
+    "tags": {
+      "primary": "Estratégia & Governança",
+      "secondary": ["Novos Negócios", "Go-to-market"]
+    },
+    "why": "Referência para desenvolvimento de novos negócios e expansão estratégica.",
+    "avatar": "/img/avatars/joao-henrique-delia.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/jo%C3%A3o-henrique-d-elia-bizarro/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Josivan Sabino",
+    "role": "Gestão de TI · Arquitetura & Sistemas",
+    "tags": {
+      "primary": "Tecnologia & Engenharia",
+      "secondary": ["Infraestrutura", "Arquitetura"]
+    },
+    "why": "Referência para gestão de TI e arquiteturas de infraestrutura.",
+    "avatar": "/img/avatars/josivan-sabino.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/josivan-sabino/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Julianna Antunes",
+    "role": "Corporate Sustainability · ESG · Innovation & Strategy",
+    "tags": {
+      "primary": "Impacto & Sustentabilidade",
+      "secondary": ["ESG", "Inovação"]
+    },
+    "why": "Referência para agendas de sustentabilidade corporativa e inovação estratégica.",
+    "avatar": "/img/avatars/julianna-antunes.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/sustentabilidadecorporativa/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Letícia Verçosa",
+    "role": "Recruiter · Treinadora e Coach Comportamental",
+    "tags": {
+      "primary": "Pessoas & Cultura",
+      "secondary": ["RH", "Desenvolvimento Humano"]
+    },
+    "why": "Referência para estruturação de processos de RH e desenvolvimento comportamental.",
+    "avatar": "/img/avatars/leticia-vercosa.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/leticiavercosa/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Marcio Lerner",
+    "role": "Gestão de Processos e Melhoria Contínua · Projetos · Planejamento Estratégico",
+    "tags": {
+      "primary": "Processos & Projetos",
+      "secondary": ["Melhoria Contínua", "Planejamento Estratégico"]
+    },
+    "why": "Referência para estruturação de processos, definição de indicadores e melhoria contínua.",
+    "avatar": "/img/avatars/marcio-lerner.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/marciolerner/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Maria Luiza Zarro",
+    "role": "Branding · Comunicação Institucional",
+    "tags": {
+      "primary": "Marketing & Marca",
+      "secondary": ["Branding", "Comunicação"]
+    },
+    "why": "Referência para construção de posicionamento institucional e coerência de marca.",
+    "avatar": "/img/avatars/malu-zarro.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/maria-luiza-zarro/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Mariana Alcantara",
+    "role": "Projetos em educação, cultura e equidade",
+    "tags": {
+      "primary": "Educação & Desenvolvimento",
+      "secondary": ["Projetos Educacionais", "Diversidade"]
+    },
+    "why": "Referência para projetos que cruzam educação, cultura e impacto social.",
+    "avatar": "/img/avatars/mariana-alcantara.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/mariana-alcantara/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Murilo Vieira",
+    "role": "Software Development / IT · AI",
+    "tags": {
+      "primary": "Tecnologia & Engenharia",
+      "secondary": ["AI", "Desenvolvimento de Software"]
+    },
+    "why": "Referência para desenvolvimento de software, estruturação técnica de projetos e soluções em IA e LLM.",
+    "avatar": "/img/avatars/murilo-vieira.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/murilo-vieira-42538b154/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Rafael Fürstenau Togashi",
+    "role": "Consultor · Business Partner / DHO · Psicólogo",
+    "tags": {
+      "primary": "Pessoas & Cultura",
+      "secondary": ["DHO", "Psicologia Organizacional"]
+    },
+    "why": "Referência para intervenções organizacionais com olhar clínico e contexto corporativo.",
+    "avatar": "/img/avatars/rafael-togashi.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/rafaeltogashi/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Rafael Jourdan",
+    "role": "Sr Software Engineer · Node.js · TypeScript · Go · React · Full Stack",
+    "tags": {
+      "primary": "Tecnologia & Engenharia",
+      "secondary": ["Full Stack", "Backend"]
+    },
+    "why": "Referência para desenvolvimento full stack com foco em consistência arquitetural.",
+    "avatar": "/img/avatars/rafael-jourdan.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/rafaeljourdan/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Taiana Trajano",
+    "role": "Palestrante e Facilitadora · Consultora de Gestão de Times",
+    "tags": {
+      "primary": "Pessoas & Cultura",
+      "secondary": ["Facilitação", "Cultura Organizacional"]
+    },
+    "why": "Referência para desenvolvimento de lideranças e cultura organizacional.",
+    "avatar": "/img/avatars/taiana-trajano.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/taiana-trajano-751064253/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Thais Adamowicz",
+    "role": "Technical Instructional Designer · Learning Experience · T&D",
+    "tags": {
+      "primary": "Educação & Desenvolvimento",
+      "secondary": ["LXD", "Aprendizagem Corporativa"]
+    },
+    "why": "Referência em desenho de aprendizagem aplicada para adultos em contextos corporativos.",
+    "avatar": "/img/avatars/thais-adamowicz.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/thaisadamowicz/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Victor Araujo",
+    "role": "UX Designer · Master Interface Design · Product Design",
+    "tags": {
+      "primary": "Produto & Experiência",
+      "secondary": ["UX", "Interface"]
+    },
+    "why": "Referência para desenho de interfaces e experiência de produto.",
+    "avatar": "/img/avatars/victor-araujo.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/victor-hugo-alves-araujo/",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "name": "Wagner Felipe",
+    "role": "Desenvolvedor de Software",
+    "tags": {
+      "primary": "Tecnologia & Engenharia",
+      "secondary": ["Full Stack", "Integração"]
+    },
+    "why": "Referência para desenvolvimento de software com foco em qualidade estrutural.",
+    "avatar": "/img/avatars/wagner-felipe.jpg",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/wagner-felipe-55551bab/",
+        "primary": true
+      }
+    ]
+  }
+]

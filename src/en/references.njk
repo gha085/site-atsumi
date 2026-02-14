@@ -1,0 +1,94 @@
+---
+layout: base.njk
+locale: en
+lang: en-US
+pageKey: referencias
+title: "References | Guilherme Atsumi"
+permalink: /en/references/
+pageCss: /css/pages/referencias.css
+scripts_head:
+  - /js/referencias.js
+---
+
+<header class="section section-light page-hero" id="topo">
+  <div class="container">
+    <div class="hero-layout">
+      <div class="hero-main">
+        <p class="hero-eyebrow">REFERENCES</p>
+
+        <h1 class="hero-title">
+          Curated professionals I follow and recommend for specific contexts
+        </h1>
+
+        <p class="hero-lead">
+          This list is not a “formal endorsement”. It’s a map of people I consider
+          consistent in practice, judgment, and collaboration — and who can be useful
+          for anyone looking to unblock decisions and execution with higher quality.
+        </p>
+      </div>
+
+      <div class="hero-media" aria-label="Image">
+        <img
+          src="/img/referencias.png"
+          alt="Notebook and pen on a table, symbolizing curation and references."
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- LIST / FILTER -->
+<section class="section section-light refs-section" id="referencias">
+  <div class="container">
+    <header class="refs-header">
+      <h2>Referenced professionals</h2>
+      <p class="muted">
+        Use the filters to browse by context. Each card explains why the person is here and when it makes sense to reach out.
+      </p>
+
+      <div class="refs-toolbar" role="region" aria-label="Filters and search">
+        <div class="refs-chips" id="refsChips" aria-label="Context filters"></div>
+
+        <div class="refs-search">
+          <label class="sr-only" for="refs-q">Search</label>
+          <input id="refs-q" type="search" placeholder="Search by name or topic (e.g., governance, product…)" />
+        </div>
+      </div>
+    </header>
+
+    <!-- rendered via JS from /data/referencias.json -->
+    <div
+      class="refs-grid"
+      id="refsGrid"
+      aria-live="polite"
+      data-i18n-noresults="No results for the current filters."
+      data-i18n-all="All"
+      data-i18n-aria-card-prefix="Professional reference:"
+      data-i18n-aria-tags="Context tags"
+    ></div>
+
+    <p class="refs-note muted">
+      Note: this page is a personal curation. It does not imply formal recommendation, sponsorship, or affiliation.
+    </p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section section-dark refs-cta" id="contato-referencias">
+  <div class="container">
+    <h2>Want an objective recommendation for your context?</h2>
+    <p>
+      If you share your scenario (goal, constraints, maturity, and risk), I can point you to the profiles and paths
+      most likely to work — including when the best option is “this is not a consulting moment yet”.
+    </p>
+
+    <div class="cta-final-actions">
+      <a
+        class="cta-btn-primary"
+        href="https://wa.me/33766504014?text=Hi%20Guilherme%2C%20I%20came%20from%20your%20References%20page%20and%20I%E2%80%99d%20like%20a%20recommendation%20for%20my%20context."
+        target="_blank" rel="noopener"
+      >→ Message me on WhatsApp</a>
+    </div>
+  </div>
+</section>

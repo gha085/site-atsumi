@@ -1,0 +1,153 @@
+<!doctype html>
+{% set loc = locale or "pt" %}
+{% set t = i18n[loc] %}
+{% set key = pageKey or "home" %}
+
+{# === hreflang + canonical (multilíngue) === #}
+{% set href_pt = "/pt" ~ (i18n.pt.paths[key] or i18n.pt.paths.home) %}
+{% set href_en = "/en" ~ (i18n.en.paths[key] or i18n.en.paths.home) %}
+{% set href_fr = "/fr" ~ (i18n.fr.paths[key] or i18n.fr.paths.home) %}
+
+{% set abs_pt = site.url ~ href_pt %}
+{% set abs_en = site.url ~ href_en %}
+{% set abs_fr = site.url ~ href_fr %}
+
+{% if loc == "pt" %}
+  {% set canonicalHref = abs_pt %}
+{% elif loc == "en" %}
+  {% set canonicalHref = abs_en %}
+{% else %}
+  {% set canonicalHref = abs_fr %}
+{% endif %}
+
+<html lang="{{ lang or t.lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ title }}</title>
+
+    {# === SEO defaults === #}
+    {% set metaDescription = description or site.description %}
+    {% set ogTitle = og_title or title %}
+    {% set ogDescription = og_description or metaDescription %}
+    {% set ogUrl = canonicalHref %}
+    {% set ogSiteName = site.name or "Guilherme Atsumi" %}
+    {% set ogType = og_type or "website" %}
+
+    {# og:locale no formato esperado (pt_BR) #}
+    {% set ogLocale = (lang or t.lang) | replace("-", "_") %}
+
+
+    <link rel="canonical" href="{{ canonicalHref }}" />
+    <link rel="alternate" hreflang="{{ i18n.pt.lang }}" href="{{ abs_pt }}" />
+    <link rel="alternate" hreflang="{{ i18n.en.lang }}" href="{{ abs_en }}" />
+    <link rel="alternate" hreflang="{{ i18n.fr.lang }}" href="{{ abs_fr }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ abs_pt }}" />
+
+    {% if metaDescription %}
+    <meta name="description" content="{{ metaDescription }}" />
+    {% endif %}
+
+    {# === Open Graph baseline === #}
+    <meta property="og:title" content="{{ ogTitle }}" />
+    {% if ogDescription %}<meta property="og:description" content="{{ ogDescription }}" />{% endif %}
+    <meta property="og:type" content="{{ ogType }}" />
+    <meta property="og:url" content="{{ ogUrl }}" />
+    <meta property="og:site_name" content="{{ ogSiteName }}" />
+    <meta property="og:locale" content="{{ ogLocale }}" />
+    {% if site.image %}<meta property="og:image" content="{{ site.url }}{{ site.image }}" />{% endif %}
+
+    {# === Twitter baseline (opcional) === #}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ ogTitle }}" />
+    {% if ogDescription %}<meta name="twitter:description" content="{{ ogDescription }}" />{% endif %}
+    {% if site.image %}<meta name="twitter:image" content="{{ site.url }}{{ site.image }}" />{% endif %}
+
+
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    {% if pageCss %}
+      <link rel="stylesheet" href="{{ pageCss }}" />
+    {% endif %}
+
+    {# Font Awesome (ícones usados na home e páginas internas) #}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+        {# JS no head (defer) — por página #}
+    {% if scripts_head %}
+      {% for src in scripts_head %}
+        <script defer src="{{ src }}"></script>
+      {% endfor %}
+    {% endif %}
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": {{ (site.name or "Guilherme Atsumi") | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "inLanguage": {{ (lang or t.lang) | dump | safe }}
+    },
+    {
+      "@type": "Person",
+      "name": {{ (site.name or "Guilherme Atsumi") | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "sameAs": {{ (site.sameAs or []) | dump | safe }}
+    }
+  ]
+}
+</script>
+
+    {# Extras no head (OG, JSON-LD etc.) — por página #}
+    {% if headExtras %}
+      {{ headExtras | safe }}
+    {% endif %}
+
+  </head>
+
+  <body>
+    <header class="navbar" id="top">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-texto"><a href="/{{ loc }}{{ t.paths.home }}">Guilherme Atsumi</a></span>
+        </div>
+
+        <ul class="nav-menu" aria-label="Navegação">
+          <li><a href="/{{ loc }}{{ t.paths.home }}">{{ t.nav.home }}</a></li>
+          <li><a href="/{{ loc }}{{ t.paths.sobre }}">{{ t.nav.sobre }}</a></li>
+          <li><a href="/{{ loc }}{{ t.paths.servicos }}">{{ t.nav.servicos }}</a></li>
+          <li><a href="/{{ loc }}{{ t.paths.docencia }}">{{ t.nav.docencia }}</a></li>
+          <li><a href="/{{ loc }}{{ t.paths.referencias }}">{{ t.nav.referencias }}</a></li>
+        </ul>
+
+        <div class="nav-lang" aria-label="Idioma">
+          <a href="/pt{{ i18n.pt.paths[key] or i18n.pt.paths.home }}" lang="pt">PT</a>
+          <a href="/en{{ i18n.en.paths[key] or i18n.en.paths.home }}" lang="en">EN</a>
+          <a href="/fr{{ i18n.fr.paths[key] or i18n.fr.paths.home }}" lang="fr">FR</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      {{ content | safe }}
+    </main>
+
+    <footer id="footer">
+      <p class="footer-copyright">© {{ site.year }} Guilherme Atsumi</p>
+    </footer>
+
+        {# JS no fim do body — por página #}
+    {% if scripts %}
+      {% for src in scripts %}
+        <script src="{{ src }}"></script>
+      {% endfor %}
+    {% endif %}
+
+  </body>
+</html>

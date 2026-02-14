@@ -1,0 +1,75 @@
+/* =========================================================
+   BASE / TOKENS
+   - Tudo que deve ser consistente entre páginas
+   ========================================================= */
+:root{
+  --navy:#122137;
+  --navy-2:#1E3A5F;
+  --gray:#667078;
+  --gray-100:#E8EAED;
+  --offwhite:#F7F7F5;
+
+  --text:var(--navy);
+  --text-muted:var(--gray);
+  --surface:var(--offwhite);
+  --surface-alt:var(--gray-100);
+
+  --shadow-sm:0 2px 10px rgba(0,0,0,.10);
+  --shadow:0 8px 24px rgba(0,0,0,.14);
+  --shadow-lg:0 15px 40px rgba(0,0,0,.20);
+
+  --radius:15px;
+  --radius-btn:12px;
+
+  --container:1200px;
+}
+
+/* Reset mínimo */
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  line-height:1.6;
+  background:var(--surface);
+  color:var(--text);
+}
+img{ max-width:100%; height:auto; display:block; }
+
+/* Layout */
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 2rem;
+}
+
+/* Seções (usadas em páginas internas e pode ser usada na home) */
+.section{ padding:5rem 0; }
+.section-light{ background:var(--surface); color:var(--text); }
+.section-dark{ background:var(--navy); color:rgba(247,247,245,.92); }
+.section-alt{ background:var(--surface-alt); color:var(--text); }
+
+/* Tipografia utilitária */
+.eyebrow{
+  font-size:.75rem;
+  font-weight:800;
+  letter-spacing:2px;
+  opacity:.85;
+  color:var(--text-muted);
+}
+.lead p,
+.lead{ color:var(--text-muted); line-height:1.8; }
+.muted{ color:var(--text-muted); }
+
+/* Links */
+.text-link{
+  color:inherit;
+  text-decoration:none;
+  border-bottom:1px solid rgba(18,33,55,.25);
+}
+.text-link:hover{ border-bottom-color:rgba(18,33,55,.6); }
+
+/* Acessibilidade */
+:focus-visible{
+  outline:3px solid rgba(30,58,95,.45);
+  outline-offset:3px;
+}

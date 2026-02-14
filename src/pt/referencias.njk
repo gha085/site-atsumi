@@ -1,0 +1,89 @@
+---
+layout: base.njk
+locale: pt
+lang: pt-BR
+pageKey: referencias
+title: "Referências | Guilherme Atsumi"
+permalink: /pt/referencias/
+pageCss: /css/pages/referencias.css
+scripts_head:
+  - /js/referencias.js
+---
+<header class="section section-light page-hero" id="topo">
+  <div class="container">
+    <div class="hero-layout">
+      <div class="hero-main">
+        <p class="hero-eyebrow">REFERÊNCIAS</p>
+
+        <h1 class="hero-title">
+          Curadoria de profissionais que acompanho e recomendo para contextos específicos
+        </h1>
+
+        <p class="hero-lead">
+          Esta lista não é “endosso formal”. É um mapa de pessoas que eu considero
+          consistentes em prática, critério e colaboração, e que podem ser úteis para quem quer destravar decisões e execução
+          com mais qualidade.
+        </p>
+      </div>
+
+      <div class="hero-media" aria-label="Imagem">
+        <img src="/img/referencias.png" alt="Caderno e caneta sobre uma mesa, simbolizando curadoria e referências." loading="lazy" />
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- LISTA / FILTRO -->
+  <section class="section section-light refs-section" id="referencias">
+    <div class="container">
+      <header class="refs-header">
+        <h2>Profissionais referenciados</h2>
+        <p class="muted">
+          Use os filtros para navegar por contexto. Em cada card: por que está aqui e quando faz sentido acionar.
+        </p>
+
+          <div class="refs-toolbar" role="region" aria-label="Filtros e busca">
+          <div class="refs-chips" id="refsChips" aria-label="Filtros por contexto"></div>
+
+          <div class="refs-search">
+            <label class="sr-only" for="refs-q">Buscar</label>
+            <input id="refs-q" type="search" placeholder="Buscar por nome ou tema (ex.: governança, produto…)" />
+          </div>
+        </div>
+      </header>
+
+      <!-- renderizado via JS a partir de /data/referencias.json -->
+      <div
+      class="refs-grid"
+      id="refsGrid"
+      aria-live="polite"
+      data-i18n-noresults="Nenhum resultado para os filtros atuais."
+      data-i18n-all="Todos"
+      data-i18n-aria-card-prefix="Referência profissional:"
+      data-i18n-aria-tags="Tags de contexto"
+    ></div>
+
+      <p class="refs-note muted">
+        Nota: esta página é uma curadoria pessoal. Não implica recomendação formal, patrocínio ou vínculo.
+      </p>
+    </div>
+  </section>
+
+  
+
+  <!-- CTA FINAL -->
+  <section class="section section-dark refs-cta" id="contato-referencias">
+    <div class="container">
+      <h2>Quer uma indicação objetiva para o seu contexto?</h2>
+      <p>
+        Se você me der o cenário (meta, restrições, maturidade e risco), eu consigo indicar perfis e caminhos
+        mais prováveis de funcionar — inclusive se a melhor opção for “não é consultoria agora”.
+      </p>
+
+      <div class="cta-final-actions">
+          <a class="cta-btn-primary"
+           href="https://wa.me/33766504014?text=Oi%20Guilherme%2C%20vim%20pela%20p%C3%A1gina%20Refer%C3%AAncias%20e%20quero%20uma%20indica%C3%A7%C3%A3o%20para%20meu%20contexto."
+           target="_blank" rel="noopener">→ Falar comigo no WhatsApp</a>
+        </div>
+    </div>
+  </section>
