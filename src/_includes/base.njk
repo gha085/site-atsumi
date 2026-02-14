@@ -118,19 +118,29 @@
           <span class="logo-texto"><a href="/{{ loc }}{{ t.paths.home }}">Guilherme Atsumi</a></span>
         </div>
 
-        <ul class="nav-menu" aria-label="Navegação">
-          <li><a href="/{{ loc }}{{ t.paths.home }}">{{ t.nav.home }}</a></li>
-          <li><a href="/{{ loc }}{{ t.paths.sobre }}">{{ t.nav.sobre }}</a></li>
-          <li><a href="/{{ loc }}{{ t.paths.servicos }}">{{ t.nav.servicos }}</a></li>
-          <li><a href="/{{ loc }}{{ t.paths.docencia }}">{{ t.nav.docencia }}</a></li>
-          <li><a href="/{{ loc }}{{ t.paths.referencias }}">{{ t.nav.referencias }}</a></li>
-        </ul>
+        {# Botão mobile (hambúrguer) #}
+        <button class="nav-toggle" type="button"
+          aria-label="{{ t.nav.abrir_menu or 'Abrir menu' }}"
+          aria-controls="site-nav"
+          aria-expanded="false">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
 
-        <div class="nav-lang" aria-label="Idioma">
-          <a href="/pt{{ i18n.pt.paths[key] or i18n.pt.paths.home }}" lang="pt">PT</a>
-          <a href="/en{{ i18n.en.paths[key] or i18n.en.paths.home }}" lang="en">EN</a>
-          <a href="/fr{{ i18n.fr.paths[key] or i18n.fr.paths.home }}" lang="fr">FR</a>
-        </div>
+        <nav id="site-nav" class="site-nav" aria-label="{{ t.nav.aria_principal or 'Navegação principal' }}">
+          <ul class="nav-menu">
+            <li><a href="/{{ loc }}{{ t.paths.home }}">{{ t.nav.home }}</a></li>
+            <li><a href="/{{ loc }}{{ t.paths.sobre }}">{{ t.nav.sobre }}</a></li>
+            <li><a href="/{{ loc }}{{ t.paths.servicos }}">{{ t.nav.servicos }}</a></li>
+            <li><a href="/{{ loc }}{{ t.paths.docencia }}">{{ t.nav.docencia }}</a></li>
+            <li><a href="/{{ loc }}{{ t.paths.referencias }}">{{ t.nav.referencias }}</a></li>
+          </ul>
+
+          <div class="nav-lang" aria-label="{{ t.nav.aria_idioma or 'Idioma' }}">
+            <a href="/pt{{ i18n.pt.paths[key] or i18n.pt.paths.home }}" lang="pt">PT</a>
+            <a href="/en{{ i18n.en.paths[key] or i18n.en.paths.home }}" lang="en">EN</a>
+            <a href="/fr{{ i18n.fr.paths[key] or i18n.fr.paths.home }}" lang="fr">FR</a>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -141,6 +151,8 @@
     <footer id="footer">
       <p class="footer-copyright">© {{ site.year }} Guilherme Atsumi</p>
     </footer>
+
+        <script src="/js/nav.js"></script>
 
         {# JS no fim do body — por página #}
     {% if scripts %}
