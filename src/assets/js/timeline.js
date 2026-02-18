@@ -3,7 +3,17 @@ function initTimeline() {
   const grid = document.querySelector(".timeline-grid");
   if (!grid) return;
 
+  // 🔴 Se for mobile, não aplicar posicionamento programático
+  if (window.innerWidth <= 980) {
+    grid.querySelectorAll(".t-card").forEach(el => {
+      el.style.gridRow = "";
+      el.style.removeProperty("--lane");
+    });
+    return;
+  }
+
   const yearsEl = grid.querySelector(".timeline-years");
+
   const yearNodes = [...yearsEl.querySelectorAll(".year")];
 
   const yearToRow = new Map();
@@ -64,3 +74,12 @@ function initTimeline() {
 }
 
 document.addEventListener("DOMContentLoaded", initTimeline);
+
+window.addEventListener("resize", () => {
+  document.querySelectorAll(".t-card").forEach(el => {
+    el.style.gridRow = "";
+    el.style.removeProperty("--lane");
+  });
+  initTimeline();
+});
+
